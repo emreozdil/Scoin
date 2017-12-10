@@ -14,6 +14,10 @@
 		9AB5B6B01FDD161B006858AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB5B6AE1FDD161B006858AC /* LaunchScreen.storyboard */; };
 		9AB5B6B81FDD1CD2006858AC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB5B6B71FDD1CD2006858AC /* Model.swift */; };
 		9AD56F891FDD33CE0052DB92 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD56F881FDD33CE0052DB92 /* Extensions.swift */; };
+		9AD56F8B1FDD34CD0052DB92 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD56F8A1FDD34CD0052DB92 /* HistoryViewController.swift */; };
+		9AD56F8F1FDD38F00052DB92 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD56F8E1FDD38F00052DB92 /* BalloonMarker.swift */; };
+		9AD56F911FDD3A050052DB92 /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD56F901FDD3A050052DB92 /* DemoBaseViewController.swift */; };
+		9AD56F951FDD557C0052DB92 /* SubCoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD56F941FDD557C0052DB92 /* SubCoinsViewController.swift */; };
 		9AEF141E1FDD290800315089 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF141D1FDD290800315089 /* CustomTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		9AB5B6B11FDD161B006858AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB5B6B71FDD1CD2006858AC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9AD56F881FDD33CE0052DB92 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9AD56F8A1FDD34CD0052DB92 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9AD56F8E1FDD38F00052DB92 /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		9AD56F901FDD3A050052DB92 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
+		9AD56F941FDD557C0052DB92 /* SubCoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCoinsViewController.swift; sourceTree = "<group>"; };
 		9AEF141D1FDD290800315089 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		AFB45D1BA2AD33EF1B3024AF /* Pods_Sahibinden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sahibinden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C590445F5A52A9CFE6888C26 /* Pods-Sahibinden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sahibinden.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sahibinden/Pods-Sahibinden.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +83,10 @@
 			children = (
 				9AB5B6A51FDD161B006858AC /* AppDelegate.swift */,
 				9AB5B6A71FDD161B006858AC /* CurrentCurrencyViewController.swift */,
+				9AD56F8E1FDD38F00052DB92 /* BalloonMarker.swift */,
+				9AD56F8A1FDD34CD0052DB92 /* HistoryViewController.swift */,
+				9AD56F901FDD3A050052DB92 /* DemoBaseViewController.swift */,
+				9AD56F941FDD557C0052DB92 /* SubCoinsViewController.swift */,
 				9AEF141D1FDD290800315089 /* CustomTabBarViewController.swift */,
 				9AB5B6AC1FDD161B006858AC /* Assets.xcassets */,
 				9AB5B6AE1FDD161B006858AC /* LaunchScreen.storyboard */,
@@ -206,12 +218,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Sahibinden/Pods-Sahibinden-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,11 +240,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD56F951FDD557C0052DB92 /* SubCoinsViewController.swift in Sources */,
 				9AD56F891FDD33CE0052DB92 /* Extensions.swift in Sources */,
 				9AB5B6B81FDD1CD2006858AC /* Model.swift in Sources */,
 				9AB5B6A81FDD161B006858AC /* CurrentCurrencyViewController.swift in Sources */,
+				9AD56F8B1FDD34CD0052DB92 /* HistoryViewController.swift in Sources */,
 				9AEF141E1FDD290800315089 /* CustomTabBarViewController.swift in Sources */,
 				9AB5B6A61FDD161B006858AC /* AppDelegate.swift in Sources */,
+				9AD56F911FDD3A050052DB92 /* DemoBaseViewController.swift in Sources */,
+				9AD56F8F1FDD38F00052DB92 /* BalloonMarker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

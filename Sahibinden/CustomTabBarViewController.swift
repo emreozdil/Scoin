@@ -8,6 +8,10 @@
 
 import UIKit
 
+let URLHistory = "https://devakademi.sahibinden.com/history"
+let URLTicker = "https://devakademi.sahibinden.com/ticker"
+let URLBitcoin = "https://blockchain.info/charts/market-price?timespan=30days&format=json"
+
 class CustomTabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
@@ -18,8 +22,11 @@ class CustomTabBarViewController: UITabBarController {
         let currentCurrencyNavController = UINavigationController(rootViewController: currentCurrencyViewController)
         currentCurrencyNavController.tabBarItem = UITabBarItem(title: "Scoin", image: #imageLiteral(resourceName: "money") , tag: 1)
         
+        let historyViewController = HistoryViewController()
+        let historyNavController = UINavigationController(rootViewController: historyViewController)
+        historyNavController.tabBarItem = UITabBarItem(title: "History", image: #imageLiteral(resourceName: "money") , tag: 1)
         
-        viewControllers = [currentCurrencyNavController, createDummyNavControllerWithTitle("History", imageName: "money"), createDummyNavControllerWithTitle("Sub Coins", imageName: "money")]
+        viewControllers = [currentCurrencyNavController, historyNavController, createDummyNavControllerWithTitle("Sub Coins", imageName: "money")]
         
     }
     

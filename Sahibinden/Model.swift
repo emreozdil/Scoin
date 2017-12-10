@@ -23,3 +23,38 @@ class Ticker: Mappable {
         value <- map["value"]
     }
 }
+
+class Bitcoin: Mappable {
+    var description: String?
+    var name: String?
+    var period: String?
+    var status: String?
+    var unit: String?
+    var values: [Value]?
+    
+    required init?(map: Map) {
+        
+    }
+    func mapping(map: Map) {
+        description <- map["description"]
+        name <- map["name"]
+        period <- map["period"]
+        status <- map["status"]
+        unit <- map["unit"]
+        values <- map["values"]
+    }
+}
+
+class Value: Mappable {
+    var date: Double?
+    var value: Double?
+    
+    required init?(map: Map){
+        
+    }
+    
+    func mapping(map: Map) {
+        date <- map["x"]
+        value <- map["y"]
+    }
+}

@@ -10,11 +10,9 @@ import UIKit
 import Alamofire
 import AlamofireObjectMapper
 
-let URLHistory = "https://devakademi.sahibinden.com/history"
-let URLTicker = "https://devakademi.sahibinden.com/ticker"
-
 class CurrentCurrencyViewController: UIViewController {
     
+    var ticker: Ticker?
 
     lazy var coinLogoImageView: UIImageView = {
         let imageView = UIImageView()
@@ -55,14 +53,13 @@ class CurrentCurrencyViewController: UIViewController {
         button.addTarget(self, action: #selector(handleRefresh), for: .touchUpInside)
         return button
     }()
-
-    var ticker: Ticker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchTicker()
         
         view.backgroundColor = UIColor.white
+        title = "Currenct Currency"
         
         view.addSubview(coinLogoImageView)
         view.addSubview(currencyCoinLabel)
@@ -100,20 +97,6 @@ class CurrentCurrencyViewController: UIViewController {
             self.fillData()
         }
         
-    }
-    
-    func fetchHistory() {
-        
-        Alamofire.request(URLHistory).responseArray { (response: DataResponse<[Ticker]>) in
-            let tickerArray = response.result.value
-            
-            if let tickerArray = tickerArray {
-                for ticker in tickerArray {
-                    print(ticker.date ?? "")
-                    print(ticker.value ?? "")
-                }
-            }
-        }
     }
     
     func setupCoinLogoImageView() {
