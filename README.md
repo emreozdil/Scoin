@@ -23,3 +23,4 @@ let URLHistory = "https://devakademi.sahibinden.com/history"
 let URLTicker = "https://devakademi.sahibinden.com/ticker"
 let URLBitcoin = "https://blockchain.info/charts/market-price?timespan=30days&format=json"
 ```
+<img src="/Screenshots/Current Currency.PNG" width="240px"><img src="/Screenshots/ScoinHistory.PNG" width="240px"><img src="/Screenshots/Scoin vs Bitcoin.PNG" width="240px">
