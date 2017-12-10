@@ -43,17 +43,6 @@ class CurrentCurrencyViewController: UIViewController {
         return label
     }()
     
-    let refreshButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.backgroundColor = UIColor.sahibinden
-        button.setTitle("Refresh", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(handleRefresh), for: .touchUpInside)
-        return button
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchTicker()
@@ -66,12 +55,12 @@ class CurrentCurrencyViewController: UIViewController {
         view.addSubview(coinLogoImageView)
         view.addSubview(currencyCoinLabel)
         view.addSubview(dateLabel)
-        view.addSubview(refreshButton)
         
         setupCoinLogoImageView()
         setupCurrencyCoinLabel()
         setupDateLabel()
-        setupRefreshButton()
+        
+        Timer.scheduledTimer(timeInterval: 15.0, target: self, selector: #selector(handleRefresh), userInfo: nil, repeats: true)
     }
     
     func fillData() {
@@ -125,13 +114,6 @@ class CurrentCurrencyViewController: UIViewController {
         dateLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
 
-    func setupRefreshButton() {
-        // MARK: X, Y, Width, Height
-        refreshButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        refreshButton.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 64).isActive = true
-        refreshButton.widthAnchor.constraint(equalTo: currencyCoinLabel.widthAnchor).isActive = true
-        refreshButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-    }
 
     @objc func handleRefresh() {
         fetchTicker()
