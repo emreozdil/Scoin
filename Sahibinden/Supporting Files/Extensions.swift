@@ -14,4 +14,5 @@ extension UIColor{
     }
     static var sahibinden = UIColor(r: 254, g: 230, b: 51)
     static var background = UIColor(r: 230, g: 230, b: 230)
+    static var bar = UIColor(r: 198, g: 198, b: 198)
 }

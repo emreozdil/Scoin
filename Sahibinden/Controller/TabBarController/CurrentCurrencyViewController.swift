@@ -59,6 +59,8 @@ class CurrentCurrencyViewController: UIViewController {
         fetchTicker()
         
         view.backgroundColor = UIColor.background
+        self.navigationController?.navigationBar.backgroundColor = UIColor.bar
+        self.tabBarController?.tabBar.backgroundColor = UIColor.bar
         title = "Currenct Currency"
         
         view.addSubview(coinLogoImageView)

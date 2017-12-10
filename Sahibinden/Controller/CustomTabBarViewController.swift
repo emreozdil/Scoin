@@ -20,15 +20,15 @@ class CustomTabBarViewController: UITabBarController {
         //setup our custom view controllers
         let currentCurrencyViewController = CurrentCurrencyViewController()
         let currentCurrencyNavController = UINavigationController(rootViewController: currentCurrencyViewController)
-        currentCurrencyNavController.tabBarItem = UITabBarItem(title: "Scoin", image: #imageLiteral(resourceName: "money") , tag: 1)
+        currentCurrencyNavController.tabBarItem = UITabBarItem(title: "Current Currency", image: #imageLiteral(resourceName: "money") , tag: 1)
         
         let historyViewController = HistoryViewController()
         let historyNavController = UINavigationController(rootViewController: historyViewController)
-        historyNavController.tabBarItem = UITabBarItem(title: "History", image: #imageLiteral(resourceName: "money") , tag: 1)
+        historyNavController.tabBarItem = UITabBarItem(title: "Scoin History", image: #imageLiteral(resourceName: "history") , tag: 1)
         
         let subCoinsViewController = SubCoinsViewController()
         let subCoinsNavController = UINavigationController(rootViewController: subCoinsViewController)
-        subCoinsNavController.tabBarItem = UITabBarItem(title: "Sub Coins", image: #imageLiteral(resourceName: "money") , tag: 1)
+        subCoinsNavController.tabBarItem = UITabBarItem(title: "Scoin vs Bitcoin", image: #imageLiteral(resourceName: "chart") , tag: 1)
         
         viewControllers = [currentCurrencyNavController, historyNavController, subCoinsNavController]
         

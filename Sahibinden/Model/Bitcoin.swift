@@ -1,28 +1,12 @@
 //
-//  Model.swift
+//  Bitcoin.swift
 //  Sahibinden
 //
 //  Created by Emre Özdil on 10/12/2017.
 //  Copyright © 2017 Emre Özdil. All rights reserved.
 //
 
-import UIKit
 import ObjectMapper
-
-
-class Ticker: Mappable {
-    var date: Double?
-    var value: Double?
-    
-    required init?(map: Map){
-        
-    }
-    
-    func mapping(map: Map) {
-        date <- map["date"]
-        value <- map["value"]
-    }
-}
 
 class Bitcoin: Mappable {
     var description: String?
@@ -42,19 +26,5 @@ class Bitcoin: Mappable {
         status <- map["status"]
         unit <- map["unit"]
         values <- map["values"]
-    }
-}
-
-class Value: Mappable {
-    var date: Double?
-    var value: Double?
-    
-    required init?(map: Map){
-        
-    }
-    
-    func mapping(map: Map) {
-        date <- map["x"]
-        value <- map["y"]
     }
 }

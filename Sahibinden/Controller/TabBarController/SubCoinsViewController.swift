@@ -110,7 +110,7 @@ class SubCoinsViewController: DemoBaseViewController {
         rightAxis.granularityEnabled = false
 
         
-        chartView.animate(xAxisDuration: 2.5)
+        chartView.animate(xAxisDuration: 0.5)
     }
     
     func setupChartView() {
@@ -181,10 +181,6 @@ class SubCoinsViewController: DemoBaseViewController {
                 let val: Double = bitcoinHistory![i].value!
                 return ChartDataEntry(x: Double(i-initialBitcoinValue), y: val)
             }
-//            let yVals3 = (0..<count).map { (i) -> ChartDataEntry in
-//                let val = Double(arc4random_uniform(range) + 500)
-//                return ChartDataEntry(x: Double(i), y: val)
-//            }
             
             let set1 = LineChartDataSet(values: yVals1, label: "Scoin")
             set1.axisDependency = .left
@@ -207,19 +203,7 @@ class SubCoinsViewController: DemoBaseViewController {
             set2.fillColor = .red
             set2.highlightColor = UIColor(red: 244/255, green: 117/255, blue: 117/255, alpha: 1)
             set2.drawCircleHoleEnabled = false
-            
-//            let set3 = LineChartDataSet(values: yVals3, label: "DataSet 3")
-//            set3.axisDependency = .right
-//            set3.setColor(.yellow)
-//            set3.setCircleColor(.white)
-//            set3.lineWidth = 2
-//            set3.circleRadius = 3
-//            set3.fillAlpha = 65/255
-//            set3.fillColor = UIColor.yellow.withAlphaComponent(200/255)
-//            set3.highlightColor = UIColor(red: 244/255, green: 117/255, blue: 117/255, alpha: 1)
-//            set3.drawCircleHoleEnabled = false
-            
-//            let data = LineChartData(dataSets: [set1, set2, set3])
+
             let data = LineChartData(dataSets: [set1, set2])
             data.setValueTextColor(.blue)
             data.setValueFont(.systemFont(ofSize: 9))

@@ -46,7 +46,7 @@ class HistoryViewController: DemoBaseViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.background
-        title = "Scoin"
+        title = "Scoin History"
         
         view.addSubview(chartView)
         view.addSubview(slider)
