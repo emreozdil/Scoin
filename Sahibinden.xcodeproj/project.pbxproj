@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89D024F7EE502ED2C5A56659 /* Pods_Sahibinden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB45D1BA2AD33EF1B3024AF /* Pods_Sahibinden.framework */; };
 		9AB5B6A61FDD161B006858AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB5B6A51FDD161B006858AC /* AppDelegate.swift */; };
-		9AB5B6A81FDD161B006858AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB5B6A71FDD161B006858AC /* ViewController.swift */; };
-		9AB5B6AB1FDD161B006858AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB5B6A91FDD161B006858AC /* Main.storyboard */; };
+		9AB5B6A81FDD161B006858AC /* CurrentCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB5B6A71FDD161B006858AC /* CurrentCurrencyViewController.swift */; };
 		9AB5B6AD1FDD161B006858AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB5B6AC1FDD161B006858AC /* Assets.xcassets */; };
 		9AB5B6B01FDD161B006858AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB5B6AE1FDD161B006858AC /* LaunchScreen.storyboard */; };
+		9AB5B6B81FDD1CD2006858AC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB5B6B71FDD1CD2006858AC /* Model.swift */; };
+		9AD56F891FDD33CE0052DB92 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD56F881FDD33CE0052DB92 /* Extensions.swift */; };
+		9AEF141E1FDD290800315089 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF141D1FDD290800315089 /* CustomTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78D8143008F93994DCDA4207 /* Pods-Sahibinden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sahibinden.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sahibinden/Pods-Sahibinden.debug.xcconfig"; sourceTree = "<group>"; };
 		9AB5B6A21FDD161B006858AC /* Sahibinden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sahibinden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB5B6A51FDD161B006858AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AB5B6A71FDD161B006858AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9AB5B6AA1FDD161B006858AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AB5B6A71FDD161B006858AC /* CurrentCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCurrencyViewController.swift; sourceTree = "<group>"; };
 		9AB5B6AC1FDD161B006858AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB5B6AF1FDD161B006858AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AB5B6B11FDD161B006858AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB5B6B71FDD1CD2006858AC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9AD56F881FDD33CE0052DB92 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9AEF141D1FDD290800315089 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		AFB45D1BA2AD33EF1B3024AF /* Pods_Sahibinden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sahibinden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C590445F5A52A9CFE6888C26 /* Pods-Sahibinden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sahibinden.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sahibinden/Pods-Sahibinden.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D024F7EE502ED2C5A56659 /* Pods_Sahibinden.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E553D1A8C1C8E43AAD44373 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFB45D1BA2AD33EF1B3024AF /* Pods_Sahibinden.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9AB5B6991FDD161B006858AC = {
 			isa = PBXGroup;
 			children = (
 				9AB5B6A41FDD161B006858AC /* Sahibinden */,
 				9AB5B6A31FDD161B006858AC /* Products */,
+				D74510C422AE45ACF529C5B8 /* Pods */,
+				3E553D1A8C1C8E43AAD44373 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +74,24 @@
 			isa = PBXGroup;
 			children = (
 				9AB5B6A51FDD161B006858AC /* AppDelegate.swift */,
-				9AB5B6A71FDD161B006858AC /* ViewController.swift */,
-				9AB5B6A91FDD161B006858AC /* Main.storyboard */,
+				9AB5B6A71FDD161B006858AC /* CurrentCurrencyViewController.swift */,
+				9AEF141D1FDD290800315089 /* CustomTabBarViewController.swift */,
 				9AB5B6AC1FDD161B006858AC /* Assets.xcassets */,
 				9AB5B6AE1FDD161B006858AC /* LaunchScreen.storyboard */,
 				9AB5B6B11FDD161B006858AC /* Info.plist */,
+				9AB5B6B71FDD1CD2006858AC /* Model.swift */,
+				9AD56F881FDD33CE0052DB92 /* Extensions.swift */,
 			);
 			path = Sahibinden;
+			sourceTree = "<group>";
+		};
+		D74510C422AE45ACF529C5B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78D8143008F93994DCDA4207 /* Pods-Sahibinden.debug.xcconfig */,
+				C590445F5A52A9CFE6888C26 /* Pods-Sahibinden.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AB5B6B41FDD161B006858AC /* Build configuration list for PBXNativeTarget "Sahibinden" */;
 			buildPhases = (
+				C54922146638A95AED248632 /* [CP] Check Pods Manifest.lock */,
 				9AB5B69E1FDD161B006858AC /* Sources */,
 				9AB5B69F1FDD161B006858AC /* Frameworks */,
 				9AB5B6A01FDD161B006858AC /* Resources */,
+				F80C7465015A7D0D92E63F07 /* [CP] Embed Pods Frameworks */,
+				18D7F78F8C46784205816476 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +158,78 @@
 			files = (
 				9AB5B6B01FDD161B006858AC /* LaunchScreen.storyboard in Resources */,
 				9AB5B6AD1FDD161B006858AC /* Assets.xcassets in Resources */,
-				9AB5B6AB1FDD161B006858AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18D7F78F8C46784205816476 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sahibinden/Pods-Sahibinden-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54922146638A95AED248632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sahibinden-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80C7465015A7D0D92E63F07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sahibinden/Pods-Sahibinden-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sahibinden/Pods-Sahibinden-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AB5B69E1FDD161B006858AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB5B6A81FDD161B006858AC /* ViewController.swift in Sources */,
+				9AD56F891FDD33CE0052DB92 /* Extensions.swift in Sources */,
+				9AB5B6B81FDD1CD2006858AC /* Model.swift in Sources */,
+				9AB5B6A81FDD161B006858AC /* CurrentCurrencyViewController.swift in Sources */,
+				9AEF141E1FDD290800315089 /* CustomTabBarViewController.swift in Sources */,
 				9AB5B6A61FDD161B006858AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +237,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9AB5B6A91FDD161B006858AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9AB5B6AA1FDD161B006858AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9AB5B6AE1FDD161B006858AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +357,7 @@
 		};
 		9AB5B6B51FDD161B006858AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D8143008F93994DCDA4207 /* Pods-Sahibinden.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +373,7 @@
 		};
 		9AB5B6B61FDD161B006858AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C590445F5A52A9CFE6888C26 /* Pods-Sahibinden.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
