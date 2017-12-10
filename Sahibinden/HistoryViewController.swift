@@ -45,7 +45,7 @@ class HistoryViewController: DemoBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.background
         title = "Scoin"
         
         view.addSubview(chartView)
@@ -107,8 +107,6 @@ class HistoryViewController: DemoBaseViewController {
         
         chartView.legend.form = .line
         
-//        sliderX.value = 45.0
-//        sliderY.value = 100.0
         
         chartView.animate(xAxisDuration: 2.5)
     }
@@ -140,11 +138,10 @@ class HistoryViewController: DemoBaseViewController {
             return
         }
         
-//        self.setDataCount(Int(sliderX.value), range: UInt32(sliderY.value))
-        self.setDataCount(Int(10), range: UInt32(100))
+        self.setDataCount()
     }
     
-    func setDataCount(_ count: Int, range: UInt32) {
+    func setDataCount() {
         if let tickersCount = history?.count {
             let initialValue = tickersCount - Int(slider.value)
             

@@ -26,7 +26,11 @@ class CustomTabBarViewController: UITabBarController {
         let historyNavController = UINavigationController(rootViewController: historyViewController)
         historyNavController.tabBarItem = UITabBarItem(title: "History", image: #imageLiteral(resourceName: "money") , tag: 1)
         
-        viewControllers = [currentCurrencyNavController, historyNavController, createDummyNavControllerWithTitle("Sub Coins", imageName: "money")]
+        let subCoinsViewController = SubCoinsViewController()
+        let subCoinsNavController = UINavigationController(rootViewController: subCoinsViewController)
+        subCoinsNavController.tabBarItem = UITabBarItem(title: "Sub Coins", image: #imageLiteral(resourceName: "money") , tag: 1)
+        
+        viewControllers = [currentCurrencyNavController, historyNavController, subCoinsNavController]
         
     }
     
