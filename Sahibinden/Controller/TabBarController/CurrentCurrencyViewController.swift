@@ -47,6 +47,9 @@ class CurrentCurrencyViewController: UIViewController {
         super.viewDidLoad()
         fetchTicker()
         
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.barTintColor = UIColor(r: 238, g: 238, b: 238)
+        
         view.backgroundColor = UIColor.background
         self.navigationController?.navigationBar.backgroundColor = UIColor.bar
         self.tabBarController?.tabBar.backgroundColor = UIColor.bar

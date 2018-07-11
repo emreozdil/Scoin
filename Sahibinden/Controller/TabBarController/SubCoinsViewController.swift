@@ -46,6 +46,9 @@ class SubCoinsViewController: DemoBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.barTintColor = UIColor(r: 238, g: 238, b: 238)
+
         view.backgroundColor = UIColor.background
         
         view.addSubview(chartView)
