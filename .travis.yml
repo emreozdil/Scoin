@@ -1,6 +1,5 @@
-{
-  "language": "swift",
-  "osx_image": "xcode9",
-  "xcode_project": "GEM.xcworkspace",
-  "os": "osx"
-}
+language: swift
+osx_image: xcode9.4
+
+script:
+    - xcodebuild clean build -sdk iphonesimulator -workspace Sahibinden.xcworkspace -scheme Sahibinden CODE_SIGNING_REQUIRED=NO
